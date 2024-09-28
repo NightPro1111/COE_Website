@@ -164,18 +164,6 @@
       const modal = document.querySelector(".modal");
       const overlay = document.querySelector(".overlay");
 
-      //model-1
-      const openModal = () => {
-        modal.classList.add("active");
-        overlay.classList.add("overlayactive");
-      };
-
-      //model-2
-      const closeModal = () => {
-        modal.classList.remove("active");
-        overlay.classList.remove("overlayactive");
-      };
-
       // Typing effect for "Convergence Of Essence"
       const text = "Convergence Of Essence";
       const typingText = document.getElementById('typingText');
@@ -201,15 +189,6 @@
         }
       }
 
-      // Start the typing effect when the page loads
-      window.addEventListener('DOMContentLoaded', (event) => {
-        typeText();
-        
-        // Existing audio code
-        const audio = document.getElementById('backgroundMusic');
-        audio.volume = 0.5; // Set volume to 50%
-        audio.play();
-      });
     </script>
 
     <!-- Overlay -->
